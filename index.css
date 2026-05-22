@@ -1,56 +1,59 @@
 /* ── Design tokens ── */
 :root {
-  --bg:           #09090b;
-  --surface:      #141414;
-  --surface2:     #1e1e22;
-  --border:       #27272a;
-  --text:         #e4e4e7;
-  --muted:        #52525b;
-  --accent:       #7c3aed;
-  --accent2:      #a78bfa;
-  --green:        #34d399;
-  --font-display: "JetBrains Mono", "Fira Code", "Cascadia Code", ui-monospace, monospace;
+    --bg: #fffdf0;
+    --surface: #ffffff;
+    --border: #000000;
+    --text: #000000;
+    --muted: #777777;
+    --accent: #ffe500;
+    --accent2: #ff4d00;
+    --green: #00cc55;
+    --font: "Space Grotesk", system-ui, -apple-system, sans-serif;
 }
 
 /* ── Reset ── */
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-html, body, #root {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
+html,
+body,
+#root {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
 body {
-  font-family: var(--font-display);
-  font-size: 13px;
-  color: var(--text);
-  background: var(--bg);
-  -webkit-font-smoothing: antialiased;
+    font-family: var(--font);
+    font-size: 14px;
+    color: var(--text);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
 }
 
 button {
-  border: none;
-  background: none;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: inherit;
-  color: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
 }
 
 input {
-  border: none;
-  outline: none;
-  background: none;
-  font-family: inherit;
-  color: var(--text);
-  width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: inherit;
+    color: var(--text);
+    width: 100%;
 }
 
 input::placeholder {
-  color: var(--muted);
+    color: var(--muted);
 }
