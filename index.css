@@ -1,0 +1,56 @@
+/* ── Design tokens ── */
+:root {
+  --bg:           #09090b;
+  --surface:      #141414;
+  --surface2:     #1e1e22;
+  --border:       #27272a;
+  --text:         #e4e4e7;
+  --muted:        #52525b;
+  --accent:       #7c3aed;
+  --accent2:      #a78bfa;
+  --green:        #34d399;
+  --font-display: "JetBrains Mono", "Fira Code", "Cascadia Code", ui-monospace, monospace;
+}
+
+/* ── Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font-display);
+  font-size: 13px;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: none;
+  font-family: inherit;
+  color: var(--text);
+  width: 100%;
+}
+
+input::placeholder {
+  color: var(--muted);
+}
